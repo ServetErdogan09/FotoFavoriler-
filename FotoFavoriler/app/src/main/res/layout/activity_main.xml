@@ -1,0 +1,67 @@
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/design_default_color_secondary">
+
+    <!-- Fotoğraf ekle ikonu -->
+
+    <!-- Fotoğraf ekle metni -->
+
+    <!-- Favoriler ikonu -->
+
+    <!-- Favoriler metni -->
+
+    <ImageView
+        android:id="@+id/fotoEkle"
+        android:layout_width="73dp"
+        android:layout_height="88dp"
+        android:layout_marginBottom="20dp"
+        android:onClick="fotoEkle"
+        android:src="@drawable/images"
+        app:layout_constraintBottom_toTopOf="@+id/textViewPhoto"
+        app:layout_constraintEnd_toStartOf="@+id/imageViewFavorites"
+        app:layout_constraintHorizontal_bias="0.453"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/textViewFavorites"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="244dp"
+        android:text="Favoriler"
+        android:textColor="@color/design_default_color_primary_dark"
+        android:textSize="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/imageViewFavorites" />
+
+    <TextView
+        android:id="@+id/textViewPhoto"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="244dp"
+        android:text="Fotoğraf Ekle"
+        android:textColor="@color/design_default_color_primary_dark"
+        android:textSize="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/textViewFavorites"
+        app:layout_constraintHorizontal_bias="0.439"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageViewFavorites"
+        android:layout_width="94dp"
+        android:layout_height="93dp"
+        android:layout_marginEnd="92dp"
+        android:layout_marginBottom="20dp"
+        android:onClick="favoriler"
+        android:src="@drawable/favori"
+        app:layout_constraintBottom_toTopOf="@+id/textViewFavorites"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
